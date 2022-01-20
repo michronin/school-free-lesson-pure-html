@@ -1,6 +1,5 @@
 const coll = document.getElementsByClassName("collapsible");
-const firstCollapsible = coll[0];
-const firstContent = firstCollapsible.nextElementSibling;
+
 
 
 for (let i = 0; i < coll.length; i++) {
@@ -29,6 +28,9 @@ function closeOthers(except) {
         }
     }
 }
-
-firstCollapsible.classList.toggle("active");
-firstContent.style.maxHeight = firstContent.scrollHeight + "px";
+setTimeout(function(){
+    const firstCollapsible = coll[0];
+    const firstContent = firstCollapsible.nextElementSibling;
+    firstCollapsible.classList.toggle("active");
+    firstContent.style.maxHeight = firstContent.scrollHeight + "px";
+}, 1);
