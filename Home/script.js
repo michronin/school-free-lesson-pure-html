@@ -1,8 +1,7 @@
 const coll = document.getElementsByClassName("collapsible");
 const firstCollapsible = coll[0];
 const firstContent = firstCollapsible.nextElementSibling;
-firstCollapsible.classList.toggle("active");
-firstContent.style.maxHeight = firstContent.scrollHeight + "px";
+
 
 for (let i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
@@ -12,8 +11,6 @@ for (let i = 0; i < coll.length; i++) {
             content.style.maxHeight = null;
         } else {
             content.style.maxHeight = content.scrollHeight + "px";
-            // console.log(this);
-            // console.log(coll[i]);
             closeOthers(coll[i]);
         }
     });
@@ -32,3 +29,6 @@ function closeOthers(except) {
         }
     }
 }
+
+firstCollapsible.classList.toggle("active");
+firstContent.style.maxHeight = firstContent.scrollHeight + "px";
