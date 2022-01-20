@@ -33,4 +33,4 @@ setTimeout(function(){
     const firstContent = firstCollapsible.nextElementSibling;
     firstCollapsible.classList.toggle("active");
     firstContent.style.maxHeight = firstContent.scrollHeight + "px";
-}, 1);
+}, 100);
