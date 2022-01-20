@@ -27,10 +27,11 @@ body {
 }
 
 #title {
-    font-family: 'Paskol', 'Rubik Beastly', cursive;
+    font-family: 'Rubik Beastly', cursive;
     text-align: center;
     font-size: 2.5vmin;
-    color: white;
+    color: rgba(0, 0, 0, 0.75);
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
     background-color: rgba(0, 0, 0, 0.75);
     border-top-right-radius: var(--border-r);
     border-top-left-radius: var(--border-r);
@@ -55,7 +56,7 @@ body {
     background-color: #ff7474;
     color: #000000;
     cursor: pointer;
-    padding: 18px;
+    padding: 2.1vmin;
     width: 100%;
     border: none;
     text-align: right;
