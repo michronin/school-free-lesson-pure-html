@@ -17,14 +17,9 @@ for (let i = 0; i < coll.length; i++) {
 
 function closeOthers(except) {
     for (let j = 0; j < coll.length; j++) {
-        console.log("hi" + j);
         if (coll[j] !== except) {
-            console.log(coll[j] === except);
             coll[j].classList.remove("active");
             coll[j].nextElementSibling.style.maxHeight = null;
-        }else {
-            console.log("else")
-            console.log(coll[j] === except);
         }
     }
 }
