@@ -27,11 +27,12 @@ body {
 }
 
 #title {
-    font-family: 'Rubik Beastly', cursive;
+    font-family: 'Secular One', sans-serif;
     text-align: center;
     font-size: 2.5vmin;
     color: rgba(0, 0, 0, 0.75);
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    text-shadow: -1px -1px 0 #fff, 2px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    letter-spacing: 0.17455156vmin;
     background-color: rgba(0, 0, 0, 0.75);
     border-top-right-radius: var(--border-r);
     border-top-left-radius: var(--border-r);
@@ -74,7 +75,7 @@ body {
     content: '\002B';
     font-weight: bold;
     float: left;
-    margin-left: 5px;
+    margin-left: 0.8vmin;
     color: #000000;
     font-size: 2vmin;
 
@@ -85,7 +86,7 @@ body {
 }
 
 .content {
-    padding: 0 18px;
+    padding: 0 2.1vmin;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -95,7 +96,7 @@ body {
 .reason {
     font-family: 'Bona Nova', serif;
     list-style-type: circle;
-    font-size: 1.7vmin;
+    font-size: 1.85vmin;
 }
 
 a{
