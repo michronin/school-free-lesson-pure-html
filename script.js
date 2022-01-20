@@ -11,7 +11,7 @@ for (let i = 0; i < coll.length; i++) {
         if (content.style.maxHeight){
             content.style.maxHeight = null;
         } else {
-            content.style.maxHeight = content.scrollHeight + "px";
+            content.style.maxHeight = content.scrollHeight + "vmin";
             // console.log(this);
             // console.log(coll[i]);
             closeOthers(coll[i]);
