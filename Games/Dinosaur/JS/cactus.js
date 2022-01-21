@@ -13,9 +13,9 @@ export function setupCactus() {
     });
 }
 
-export function updateCactus(delta, speedSCale) {
+export function updateCactus(delta, speedScale) {
     document.querySelectorAll("[data-cactus]").forEach(cactus => {
-        incrementCustomProperty(cactus, "--left", delta * speedSCale * SPEED * -1);
+        incrementCustomProperty(cactus, "--left", delta * speedScale * SPEED * -1);
         if (getCustomProperty(cactus, "--left" <= -100)) {
             cactus.remove();
         }
@@ -23,7 +23,7 @@ export function updateCactus(delta, speedSCale) {
 
     if (nextCactusTime <= 0) {
         createCactus();
-        nextCactusTime = randomNumberBetween(CACTUS_INTERVAL_MIN, CACTUS_INTERVAL_MAX) / speedSCale;
+        nextCactusTime = randomNumberBetween(CACTUS_INTERVAL_MIN, CACTUS_INTERVAL_MAX) / speedScale;
     }
 
     nextCactusTime -= delta;
@@ -41,7 +41,7 @@ function createCactus() {
     cactus.src = "./Img/cactus.png";
     cactus.classList.add("cactus");
     setCustomProperty(cactus, "--left", 100);
-    worldElem.appendChild(cactus);
+    worldElem.append(cactus);
 }
 
 function randomNumberBetween(min, max) {
