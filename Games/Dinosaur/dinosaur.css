@@ -14,6 +14,7 @@ body {
 .world {
     overflow: hidden;
     position: relative;
+    max-width: 1500px;
 }
 
 .score {
