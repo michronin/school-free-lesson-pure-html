@@ -97,8 +97,12 @@ body {
     font-family: 'Bona Nova', serif;
     list-style-type: circle;
     font-size: 1.85vmin;
+    margin-top: 1vmin;
 }
+.numberReason {
+    list-style-type: -moz-ethiopic-numeric;
 
+}
 a{
     color: black;
 }
